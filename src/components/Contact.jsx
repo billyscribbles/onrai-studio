@@ -35,8 +35,7 @@ export default function Contact() {
         setSubmitted(true)
       }
     } catch {
-      // fallback — still show success locally
-      setSubmitted(true)
+      alert('Something went wrong sending your message. Please email us directly at hello@onraistudio.com.')
     } finally {
       setSubmitting(false)
     }
@@ -201,8 +200,8 @@ export default function Contact() {
           <div className="contact__info">
             <div>
               <div className="contact__email-label">Email Us Directly</div>
-              <a href="mailto:hello@mystudio.com.au" className="contact__email">
-                hello@mystudio.com.au
+              <a href="mailto:hello@onraistudio.com" className="contact__email">
+                hello@onraistudio.com
               </a>
             </div>
 

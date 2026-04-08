@@ -33,8 +33,8 @@ export default function Home() {
       <Helmet>
         <title>Onrai Studio — Web Design & Development for Local Businesses in Australia</title>
         <meta name="description" content="Onrai Studio builds fast, modern websites that get local and small businesses found on Google. Web design, SEO, eCommerce & AI chatbots. Melbourne-based, serving all of Australia." />
-        <link rel="canonical" href="https://mystudio.com.au/" />
-        <meta property="og:url" content="https://mystudio.com.au/" />
+        <link rel="canonical" href="https://onraistudio.com/" />
+        <meta property="og:url" content="https://onraistudio.com/" />
         <meta property="og:title" content="Onrai Studio — Web Design for Local Businesses in Australia" />
         <meta property="og:description" content="We build fast, modern websites that get local businesses found on Google. Clear pricing, no lock-in contracts. Melbourne-based." />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

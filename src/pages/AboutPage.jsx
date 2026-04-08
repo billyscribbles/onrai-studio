@@ -18,8 +18,8 @@ export default function AboutPage() {
       <Helmet>
         <title>About Onrai Studio — Melbourne Web Design & Development Agency</title>
         <meta name="description" content="Onrai Studio is a Melbourne-based web design and development studio helping local and small businesses grow online with fast, modern websites, SEO, and AI tools." />
-        <link rel="canonical" href="https://mystudio.com.au/about" />
-        <meta property="og:url" content="https://mystudio.com.au/about" />
+        <link rel="canonical" href="https://onraistudio.com/about" />
+        <meta property="og:url" content="https://onraistudio.com/about" />
         <meta property="og:title" content="About Onrai Studio — Melbourne Web Design Agency" />
         <meta property="og:description" content="We're a lean, Melbourne-based studio that builds websites for local businesses. Senior-level work, clear pricing, no lock-in contracts." />
       </Helmet>
