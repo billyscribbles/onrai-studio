@@ -139,6 +139,13 @@ The repo includes `railway.json` which Railway picks up automatically.
 2. Railway runs `yarn build` then serves the `dist/` folder
 3. Add environment variables in the Railway dashboard
 
+### Domain & DNS — Cloudflare
+
+- **Domain:** onraistudio.com
+- **Registrar:** Cloudflare (billyhuynh01@gmail.com)
+- **DNS:** CNAME records for `@` and `www` pointing to `mystudio-production-8232.up.railway.app`
+- **Proxy:** Cloudflare proxied (orange cloud) — handles SSL and CDN automatically
+
 ### Manual build
 
 ```bash
