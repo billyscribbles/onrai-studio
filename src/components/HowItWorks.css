@@ -1,0 +1,282 @@
+.how {
+  background: var(--color-bg-alt);
+  padding: 96px 32px;
+}
+
+.how__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.how__header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.section-label-center {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.5vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.how__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.how__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.how__step {
+  position: relative;
+  padding: 0 0 48px 0;
+}
+
+.how__step:last-child {
+  padding-bottom: 0;
+}
+
+.how__step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 88px;
+  bottom: 0;
+  width: 1px;
+  background: rgba(13, 148, 136, 0.2);
+}
+
+.how__step-inner {
+  position: relative;
+  padding-left: 56px;
+}
+
+.how__step-number {
+  position: absolute;
+  top: -24px;
+  left: -8px;
+  font-family: var(--font-display);
+  font-size: 120px;
+  font-weight: 800;
+  color: var(--color-accent);
+  opacity: 0.08;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.how__step-icon {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 40px;
+  height: 40px;
+  background: var(--color-accent-light);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  z-index: 1;
+}
+
+.how__step-title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.how__step-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--color-muted);
+  letter-spacing: 0.005em;
+}
+
+/* CSS Device Frame */
+.how__device {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how__browser {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(13, 17, 23, 0.14);
+  border: 1px solid rgba(13, 17, 23, 0.08);
+  overflow: hidden;
+}
+
+.how__browser-bar {
+  height: 40px;
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid rgba(13, 17, 23, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.how__browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.how__browser-dot:nth-child(1) { background: #ff5f57; }
+.how__browser-dot:nth-child(2) { background: #febc2e; }
+.how__browser-dot:nth-child(3) { background: #28c840; }
+
+.how__browser-address {
+  flex: 1;
+  height: 22px;
+  background: rgba(13, 17, 23, 0.07);
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.how__browser-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.how__mock-header {
+  height: 48px;
+  background: var(--color-text);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.how__mock-logo {
+  width: 80px;
+  height: 10px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 3px;
+}
+
+.how__mock-nav {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.how__mock-nav span {
+  width: 32px;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+
+.how__mock-hero {
+  height: 80px;
+  background: var(--color-accent);
+  border-radius: 8px;
+  opacity: 0.12;
+}
+
+.how__mock-content {
+  display: flex;
+  gap: 10px;
+}
+
+.how__mock-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how__mock-line {
+  height: 10px;
+  background: rgba(13, 17, 23, 0.08);
+  border-radius: 3px;
+}
+
+.how__mock-line--short {
+  width: 65%;
+}
+
+.how__mock-btn-row {
+  display: flex;
+  gap: 8px;
+}
+
+.how__mock-btn {
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  opacity: 0.8;
+}
+
+.how__mock-btn--sm {
+  width: 80px;
+}
+
+.how__mock-btn--ghost {
+  width: 80px;
+  background: transparent;
+  border: 1.5px solid rgba(13, 17, 23, 0.15);
+  opacity: 1;
+}
+
+.how__mock-card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.how__mock-card {
+  height: 60px;
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  border: 1px solid rgba(13, 17, 23, 0.07);
+}
+
+@media (max-width: 1024px) {
+  .how__layout {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how {
+    padding: 72px 20px;
+  }
+
+  .how__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .how__device {
+    order: -1;
+  }
+
+  .section-label-center {
+    font-size: 36px;
+  }
+
+  .how__step-number {
+    font-size: 80px;
+  }
+}
