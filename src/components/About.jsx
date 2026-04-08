@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import './About.css'
 
 const values = [
-  { label: 'No lock-in contracts', desc: 'Every project is month-to-month. You stay because we deliver, not because you're trapped.' },
-  { label: 'AU based, always', desc: 'You'll talk to a real person in your timezone — not a ticket system overseas.' },
-  { label: 'Plain language', desc: 'No jargon. We explain what we're building and why, in terms that make sense to you.' },
-  { label: 'Results over aesthetics', desc: 'A site that looks great but doesn't convert is just wallpaper. We build for outcomes.' },
+  { label: 'No lock-in contracts', desc: "Every project is month-to-month. You stay because we deliver, not because you're trapped." },
+  { label: 'AU based, always', desc: "You'll talk to a real person in your timezone — not a ticket system overseas." },
+  { label: 'Plain language', desc: "No jargon. We explain what we're building and why, in terms that make sense to you." },
+  { label: 'Results over aesthetics', desc: "A site that looks great but doesn't convert is just wallpaper. We build for outcomes." },
 ]
 
 export default function About() {
