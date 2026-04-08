@@ -6,7 +6,7 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: 4173,
-    allowedHosts: ['mystudio-production-8232.up.railway.app'],
+    allowedHosts: ['mystudio-production-8232.up.railway.app', 'onraistudio.com', 'www.onraistudio.com'],
   },
   build: {
     sourcemap: false,
