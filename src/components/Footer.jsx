@@ -27,14 +27,12 @@ export default function Footer() {
           conversation.
         </p>
         {CALENDLY_URL ? (
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="footer__cta-btn"
+            onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
           >
             Book a Free Call →
-          </a>
+          </button>
         ) : (
           <a href="#contact" className="footer__cta-btn">
             Get in Touch →
