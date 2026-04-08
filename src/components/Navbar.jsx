@@ -38,6 +38,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <Link to="/services" className="navbar__link">Services</Link>
           <Link to="/about" className="navbar__link">About</Link>
           {isHome ? (
             <a href="#contact">
@@ -76,6 +77,9 @@ export default function Navbar() {
             {l.label}
           </a>
         ))}
+        <Link to="/services" className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
+          Services
+        </Link>
         <Link to="/about" className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
           About
         </Link>

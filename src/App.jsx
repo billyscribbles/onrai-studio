@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
+import ServicesPage from './pages/ServicesPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -19,6 +20,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
