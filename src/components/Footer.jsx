@@ -1,4 +1,7 @@
 import { useState } from "react";
+
+// Replace with your Calendly link when ready: https://calendly.com/your-name
+const CALENDLY_URL = null;
 import LegalModal from "./LegalModal";
 import "./Footer.css";
 
@@ -23,9 +26,15 @@ export default function Footer() {
           Book a free 30-minute discovery call. No obligation, just a
           conversation.
         </p>
-        <a href="#contact" className="footer__cta-btn">
-          Book a Free Call →
-        </a>
+        {CALENDLY_URL ? (
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="footer__cta-btn">
+            Book a Free Call →
+          </a>
+        ) : (
+          <a href="#contact" className="footer__cta-btn">
+            Get in Touch →
+          </a>
+        )}
       </div>
 
       <div className="footer__main">
