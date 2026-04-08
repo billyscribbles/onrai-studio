@@ -3,8 +3,7 @@ import { motion } from 'framer-motion'
 import { Check, CheckCircle } from 'lucide-react'
 import './Contact.css'
 
-// Replace with your Formspree form ID: https://formspree.io
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
+const FORMSPREE_ENDPOINT = `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
