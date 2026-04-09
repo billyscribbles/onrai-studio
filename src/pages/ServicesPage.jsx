@@ -153,6 +153,64 @@ export default function ServicesPage() {
                 ))}
               </div>
             </motion.div>
+
+            <motion.div
+              className="sp__hero-visual"
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+              aria-hidden="true"
+            >
+              <div className="sp__mock">
+                <div className="sp__mock-bar">
+                  <span className="sp__mock-dot--r" /><span className="sp__mock-dot--y" /><span className="sp__mock-dot--g" />
+                  <span className="sp__mock-url" />
+                </div>
+                <div className="sp__mock-body">
+                  <div className="sp__mock-dash">
+                    <div className="sp__mock-sidebar">
+                      <div className="sp__mock-sidebar-logo" />
+                      <div className="sp__mock-sidebar-nav">
+                        <div className="sp__mock-nav-item sp__mock-nav-item--active" />
+                        <div className="sp__mock-nav-item" />
+                        <div className="sp__mock-nav-item" />
+                        <div className="sp__mock-nav-item" />
+                        <div className="sp__mock-nav-item" />
+                      </div>
+                    </div>
+                    <div className="sp__mock-main">
+                      <div className="sp__mock-stats">
+                        {['#0d9488', '#7c3aed', '#d97706'].map((c, i) => (
+                          <div key={i} className="sp__mock-stat-card">
+                            <div className="sp__mock-stat-icon" style={{ background: `${c}22` }}>
+                              <div style={{ width: 8, height: 8, borderRadius: 2, background: c }} />
+                            </div>
+                            <div className="sp__mock-stat-num" />
+                            <div className="sp__mock-stat-label" />
+                          </div>
+                        ))}
+                      </div>
+                      <div className="sp__mock-chart">
+                        <div className="sp__mock-chart-bars">
+                          {[40, 62, 48, 78, 55, 92, 68].map((h, i) => (
+                            <div key={i} className="sp__mock-bar-item" style={{ height: `${h}%`, background: i === 5 ? '#0c8c81' : 'rgba(13,17,23,0.12)' }} />
+                          ))}
+                        </div>
+                      </div>
+                      <div className="sp__mock-table">
+                        {[0, 1, 2].map(i => (
+                          <div key={i} className="sp__mock-table-row">
+                            <div className="sp__mock-table-avatar" />
+                            <div className="sp__mock-table-line" />
+                            <div className="sp__mock-table-badge" style={{ background: i === 0 ? '#0c8c8122' : 'rgba(13,17,23,0.08)' }} />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 

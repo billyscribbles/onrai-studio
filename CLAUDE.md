@@ -100,6 +100,17 @@ All styling must use the CSS variables defined in `src/index.css`. Never hardcod
 
 ---
 
+### Responsive design
+
+Every component and page must be built mobile-first and verified at both mobile and desktop breakpoints. This is not optional — all new UI must work correctly at:
+
+- **Mobile**: 375px–600px (single column, reduced padding, touch-friendly tap targets)
+- **Desktop**: 1280px+ (full layout, multi-column grids)
+
+Use the established breakpoints: `max-width: 900px` (tablet), `max-width: 600px` (mobile).
+
+---
+
 ## Routing
 
 New pages go in `src/pages/`. Add route to `src/App.jsx`, link in `src/components/Navbar.jsx` (both desktop and mobile menus), and URL entry in `public/sitemap.xml`.
@@ -107,3 +118,10 @@ New pages go in `src/pages/`. Add route to `src/App.jsx`, link in `src/component
 ## Contact form
 
 Formspree endpoint uses `VITE_FORMSPREE_ID` env variable. The `<Contact />` component is reusable — embed it at the bottom of any page.
+
+---
+
+## Workflow
+
+- **Always let the user verify changes before committing or pushing.** After making code changes, stop and wait for approval unless explicitly told to push.
+- Never run `git commit` or `git push` unless the user says "push", "commit", or explicitly approves.

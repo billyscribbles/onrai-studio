@@ -107,6 +107,50 @@ export default function PortfolioPage() {
               From local tradies to SaaS startups — a selection of websites and digital experiences we've built and shipped.
             </p>
           </motion.div>
+
+          <motion.div
+            className="portfolio-page__hero-visual"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+            aria-hidden="true"
+          >
+            <div className="pp__mock">
+              <div className="pp__mock-bar">
+                <span className="pp__mock-dot--r" /><span className="pp__mock-dot--y" /><span className="pp__mock-dot--g" />
+                <span className="pp__mock-url" />
+              </div>
+              <div className="pp__mock-body">
+                <div className="pp__mock-nav">
+                  <span className="pp__mock-nav-logo" />
+                  <div className="pp__mock-nav-links">
+                    <span /><span /><span />
+                  </div>
+                  <div className="pp__mock-nav-cta" />
+                </div>
+                <div className="pp__mock-hero">
+                  <div className="pp__mock-hero-eyebrow" />
+                  <div className="pp__mock-hero-h1" />
+                  <div className="pp__mock-hero-h1 pp__mock-hero-h1--short" />
+                  <div className="pp__mock-hero-sub" />
+                  <div className="pp__mock-hero-sub pp__mock-hero-sub--short" />
+                  <div className="pp__mock-hero-btns">
+                    <div className="pp__mock-hero-btn-primary" />
+                    <div className="pp__mock-hero-btn-ghost" />
+                  </div>
+                </div>
+                <div className="pp__mock-features">
+                  {[0, 1, 2].map(i => (
+                    <div key={i} className="pp__mock-feature">
+                      <div className="pp__mock-feature-icon" />
+                      <div className="pp__mock-feature-line" />
+                      <div className="pp__mock-feature-line pp__mock-feature-line--short" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

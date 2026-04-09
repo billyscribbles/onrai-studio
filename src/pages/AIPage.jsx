@@ -117,6 +117,71 @@ export default function AIPage() {
                 ))}
               </div>
             </motion.div>
+
+            <motion.div
+              className="aip__hero-visual"
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+              aria-hidden="true"
+            >
+              <div className="aip__mock-chat">
+                <div className="aip__mock-chat-header">
+                  <div className="aip__mock-bot-avatar">
+                    <span className="aip__mock-bot-icon" />
+                  </div>
+                  <div className="aip__mock-bot-info">
+                    <div className="aip__mock-bot-name" />
+                    <div className="aip__mock-bot-status">
+                      <span className="aip__mock-status-dot" />
+                      <span className="aip__mock-status-text" />
+                    </div>
+                  </div>
+                  <div className="aip__mock-chat-actions">
+                    <span /><span />
+                  </div>
+                </div>
+                <div className="aip__mock-chat-body">
+                  <div className="aip__mock-msg aip__mock-msg--bot">
+                    <div className="aip__mock-bubble aip__mock-bubble--bot">
+                      <div className="aip__mock-msg-line" style={{ width: '85%' }} />
+                      <div className="aip__mock-msg-line" style={{ width: '70%' }} />
+                    </div>
+                  </div>
+                  <div className="aip__mock-msg aip__mock-msg--user">
+                    <div className="aip__mock-bubble aip__mock-bubble--user">
+                      <div className="aip__mock-msg-line aip__mock-msg-line--light" style={{ width: '80%' }} />
+                      <div className="aip__mock-msg-line aip__mock-msg-line--light" style={{ width: '60%' }} />
+                    </div>
+                  </div>
+                  <div className="aip__mock-msg aip__mock-msg--bot">
+                    <div className="aip__mock-bubble aip__mock-bubble--bot">
+                      <div className="aip__mock-msg-line" style={{ width: '90%' }} />
+                      <div className="aip__mock-msg-line" style={{ width: '75%' }} />
+                      <div className="aip__mock-msg-line" style={{ width: '55%' }} />
+                    </div>
+                  </div>
+                  <div className="aip__mock-msg aip__mock-msg--user">
+                    <div className="aip__mock-bubble aip__mock-bubble--user">
+                      <div className="aip__mock-msg-line aip__mock-msg-line--light" style={{ width: '65%' }} />
+                    </div>
+                  </div>
+                  <div className="aip__mock-msg aip__mock-msg--bot">
+                    <div className="aip__mock-bubble aip__mock-bubble--typing">
+                      <span className="aip__mock-typing-dot" />
+                      <span className="aip__mock-typing-dot" />
+                      <span className="aip__mock-typing-dot" />
+                    </div>
+                  </div>
+                </div>
+                <div className="aip__mock-chat-input">
+                  <div className="aip__mock-input-bar">
+                    <div className="aip__mock-input-text" />
+                    <div className="aip__mock-input-send" />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
