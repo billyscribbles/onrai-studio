@@ -387,43 +387,42 @@
   margin: 0 auto;
 }
 
-.climb-step__breadcrumb {
-  display: inline-block;
+.climb-step__crumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
   font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+.climb-step__crumb {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
   transition: color var(--transition-base);
 }
 
-.climb-step__breadcrumb:hover {
-  color: var(--color-accent);
-}
-
-.climb-step__progress {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 1.25rem;
-}
-
-.climb-step__chapter-tag {
-  color: var(--color-accent);
-}
-
-.climb-step__progress-sep {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.climb-step__progress-text {
+.climb-step__crumb--link {
   color: rgba(255, 255, 255, 0.55);
+}
+
+.climb-step__crumb--link:hover,
+.climb-step__crumb--link:focus-visible {
+  color: var(--color-accent);
+  outline: none;
+}
+
+.climb-step__crumb--current {
+  color: #fff;
+}
+
+.climb-step__crumb-sep {
+  color: rgba(255, 255, 255, 0.2);
+  user-select: none;
 }
 
 .climb-step__title {

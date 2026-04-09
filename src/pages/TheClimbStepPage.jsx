@@ -5,7 +5,6 @@ import Contact from '../components/Contact'
 import IndexCheckWidget from '../components/IndexCheckWidget'
 import {
   chapters,
-  entries,
   getEntryBySlug,
   getEntryNeighbors,
 } from '../data/climbEntries'
@@ -22,7 +21,6 @@ export default function TheClimbStepPage() {
   const { prev, next } = getEntryNeighbors(slug)
   const chapter = chapters.find((c) => c.id === entry.chapter)
   const stepLabel = String(entry.step).padStart(2, '0')
-  const totalSteps = entries.length
 
   return (
     <>
@@ -52,18 +50,19 @@ export default function TheClimbStepPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
-              <Link to="/the-climb" className="climb-step__breadcrumb">
-                <span aria-hidden="true">←</span> Back to The Climb
-              </Link>
-              <div className="climb-step__progress">
-                <span className="climb-step__chapter-tag">
-                  {chapter?.title ?? 'The Climb'}
+              <nav className="climb-step__crumbs" aria-label="Breadcrumb">
+                <Link to="/the-climb" className="climb-step__crumb climb-step__crumb--link">
+                  The Climb
+                </Link>
+                <span className="climb-step__crumb-sep" aria-hidden="true">/</span>
+                <span className="climb-step__crumb">
+                  {chapter?.title ?? 'All Steps'}
                 </span>
-                <span className="climb-step__progress-sep" aria-hidden="true">•</span>
-                <span className="climb-step__progress-text">
-                  Step {stepLabel} of {String(totalSteps).padStart(2, '0')}
+                <span className="climb-step__crumb-sep" aria-hidden="true">/</span>
+                <span className="climb-step__crumb climb-step__crumb--current">
+                  Step {stepLabel}
                 </span>
-              </div>
+              </nav>
               <h1 className="climb-step__title">{entry.title}</h1>
               <p className="climb-step__lead">{entry.summary}</p>
             </motion.div>
