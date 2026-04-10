@@ -52,18 +52,18 @@ cp .env.example .env.local
 
 ### Formspree (Contact Form)
 
-- **Account:** billyhuynh01@gmail.com at [formspree.io](https://formspree.io)
-- **Form endpoint:** `https://formspree.io/f/xgopbern`
-- **Form ID:** `xgopbern`
-- **Submissions go to:** billyhuynh01@gmail.com
+- **Account:** onraistudio@gmail.com at [formspree.io](https://formspree.io)
+- **Form endpoint:** `https://formspree.io/f/mwvwdopj`
+- **Form ID:** `mwvwdopj`
+- **Submissions go to:** onraistudio@gmail.com
 
 Set in `.env.local`:
 
 ```
-VITE_FORMSPREE_ID=xgopbern
+VITE_FORMSPREE_ID=mwvwdopj
 ```
 
-Also add `VITE_FORMSPREE_ID=xgopbern` as an environment variable in the Railway dashboard.
+Also add `VITE_FORMSPREE_ID=mwvwdopj` as an environment variable in the Railway dashboard.
 
 ---
 
@@ -142,7 +142,7 @@ The repo includes `railway.json` which Railway picks up automatically.
 ### Domain & DNS — Cloudflare
 
 - **Domain:** onraistudio.com
-- **Registrar:** Cloudflare (billyhuynh01@gmail.com)
+- **Registrar:** Cloudflare (onraistudio@gmail.com)
 - **DNS:** CNAME records for `@` and `www` pointing to `mystudio-production-8232.up.railway.app`
 - **Proxy:** Cloudflare proxied (orange cloud) — handles SSL and CDN automatically
 
