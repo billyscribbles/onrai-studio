@@ -947,8 +947,207 @@ export const entries = [
         heading: 'Next on the climb',
         items: [
           'Start with the easiest win — submit your business to two or three Australian directories this week. Make sure your name, address, and phone number match everywhere.',
-          'Draft your first case study. Pick a project you\'re proud of and write up the problem, what you did, and the result.',
-          'Keep writing useful local content. Every page you publish is another page that can earn a link.',
+          'Next up: case studies. They\'re the single highest-value pages you can add to your site — proof of real work that earns links and converts visitors at the same time.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 10,
+    step: 10,
+    slug: '10-case-studies',
+    chapter: 'authority',
+    title: 'Add Case Studies Immediately',
+    summary:
+      'Case studies are the single highest-value pages you can add to a service business site. They prove you\'ve done real work, earn backlinks, and give potential clients the confidence to reach out.',
+    sections: [
+      {
+        type: 'text',
+        heading: 'Why this matters',
+        body: `Every competitor in your space says "we build great websites" or "we deliver results." A case study actually shows it. It's a page that tells the story of a real project — who the client was, what problem they had, what you built, and what happened after. Google loves these pages because they're full of specific, relevant keywords. Potential clients love them because they can see themselves in the story. And other sites link to them because they're useful proof that something actually works. Most small businesses have zero case studies. Publishing even three puts you ahead of almost everyone in your local market.`,
+      },
+      {
+        type: 'text',
+        heading: 'Why they help both SEO and conversion',
+        body: `Two audiences read the same case study page. Google sees fresh content full of keywords you'd never think to target — phrases like "website redesign for Melbourne physiotherapist" or "AI chatbot for local accounting firm." These are long-tail search queries that your competitors aren't writing pages for. Meanwhile, a potential client reading the same page sees proof you've solved a problem similar to theirs. They don't need to trust your marketing — they can see the work. That's why case studies convert better than any other page type on a service business site.`,
+      },
+      {
+        type: 'list',
+        heading: 'What every case study should include',
+        intro: 'Keep the structure simple. Every case study needs these six things:',
+        items: [
+          'Client type — who they are, what industry, what size. You don\'t need to name the client if they prefer privacy. "A Melbourne physiotherapy clinic" works fine.',
+          'Problem — what was broken, missing, or not working. Be specific. "Their website was built in 2018 and wasn\'t showing up on Google for any local searches."',
+          'What you built — the actual work you did. Describe it in terms a non-technical reader would understand.',
+          'Tools used — the technologies, platforms, or frameworks. This adds credibility and helps Google associate your site with those tools.',
+          'Before and after — screenshots, metrics, or a simple description of what changed. Visuals are more convincing than text here.',
+          'Outcomes — what happened after launch. Did traffic increase? Did they get more enquiries? Did their Google ranking improve? Use real numbers where you can.',
+        ],
+        outro: 'You don\'t need fancy design. A simple page with a clear heading, these six sections, and a screenshot or two is more than enough to start.',
+      },
+      {
+        type: 'steps',
+        heading: 'Writing your first three',
+        items: [
+          {
+            title: 'Pick your best three projects',
+            description:
+              'Choose projects where the result was clear and the client would be happy for you to write about them. Ideally, pick projects in different industries or with different types of work (a redesign, a new build, an SEO project) so each case study targets different keywords.',
+            difficulty: 'easy',
+            time: '~15 min',
+          },
+          {
+            title: 'Get the facts down',
+            description:
+              'For each project, write down the six elements: client type, problem, what you built, tools used, before/after, and outcomes. If you can\'t remember exact numbers, ask the client or use rough estimates. "Enquiries roughly doubled in the first two months" is better than nothing.',
+            difficulty: 'easy',
+            time: '~30 min each',
+          },
+          {
+            title: 'Structure each page with a clear title',
+            description:
+              'Use a title that includes the type of work, the industry, and the location. This gives Google a clear keyword signal and tells potential clients exactly what they\'re about to read.',
+            difficulty: 'easy',
+            time: '~10 min each',
+            example: {
+              sample: 'Website Redesign for Melbourne Physiotherapy Clinic',
+            },
+          },
+          {
+            title: 'Add screenshots or real metrics',
+            description:
+              'A before-and-after screenshot of the old vs new site is the easiest visual to include. If you have analytics access, add a graph showing traffic before and after launch. Even a simple "went from page 5 to page 1 for their main keyword" is powerful. Real evidence beats polished marketing copy every time.',
+            difficulty: 'medium',
+            time: '~30 min each',
+          },
+          {
+            title: 'Publish and link from your other pages',
+            description:
+              'Add each case study to your portfolio page. Link to them from your services page where relevant — if a case study is about a website redesign, link to it from the section of your services page that talks about redesigns. These internal links help Google find the new pages and help visitors navigate to the proof they need.',
+            difficulty: 'easy',
+            time: '~15 min',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Case study titles that work',
+        intro: 'Your title is the first thing Google and readers see. Include the type of work, the industry, and ideally the location or result. Here are examples:',
+        items: [
+          '"Website Redesign for Melbourne Small Business" — location + service + client type',
+          '"AI Chatbot Setup That Reduced Response Time by 60%" — service + measurable result',
+          '"SEO-Focused Rebuild for Local Service Business" — technique + client type',
+          '"From Invisible to Page One: A Melbourne Cafe\'s New Website" — story-driven with location',
+          '"How a Melbourne Tradie Got 3x More Enquiries With a Simple Website" — outcome-driven with audience',
+        ],
+        outro: 'Notice each title reads like a mini-pitch. Someone searching for "website redesign Melbourne small business" could land directly on that case study from Google.',
+      },
+      {
+        type: 'text',
+        heading: 'What changes after this',
+        body: `Each case study creates a new landing page for a long-tail search query that your competitors probably aren't targeting. Your portfolio page stops being a grid of screenshots and starts becoming a library of proof. Internal links between your services and case studies strengthen your site structure. And when someone considering hiring you lands on a case study about a business just like theirs, the sales conversation is half finished before they even reach out. Three case studies is the minimum. Five is better. Keep adding them as you complete projects.`,
+      },
+      {
+        type: 'next',
+        heading: 'Next on the climb',
+        items: [
+          'Write your first case study this week. Pick the project with the clearest before-and-after story and start with the six elements.',
+          'Link each published case study from your portfolio page and the relevant section of your services page.',
+          'Next up: content clusters. We go deeper on your most important service topic so Google stops seeing you as a generalist and starts seeing you as the expert.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 11,
+    step: 11,
+    slug: '11-topical-authority',
+    chapter: 'authority',
+    title: 'Build Topical Authority Around Your Services',
+    summary:
+      'One mention of "AI" on your homepage doesn\'t make you an AI expert in Google\'s eyes. You need a cluster of related pages that prove you actually know the subject.',
+    sections: [
+      {
+        type: 'text',
+        heading: 'Why this matters',
+        body: `If you want to rank for a competitive service keyword — like "AI chatbot for small business" — having one page that mentions it isn't enough. Google compares your site against competitors who have five, ten, or twenty pages about AI. It sees their site and thinks "this business clearly knows AI." It sees yours and thinks "this business mentioned AI once." That gap is called topical authority, and it's the reason some businesses rank for terms they've barely optimised while others can't crack page one despite doing everything else right. The fix isn't harder — it's just more pages about the same topic.`,
+      },
+      {
+        type: 'text',
+        heading: 'What a content cluster looks like',
+        body: `A content cluster is simple: one main service page (the "pillar") surrounded by three to five supporting articles that go deeper into specific angles. Every supporting article links back to the pillar page. The pillar links out to each supporting article. Google crawls the whole cluster and sees a web of connected content about one topic. It concludes you actually understand this subject — and starts ranking your pillar page higher for the main keyword. Without the cluster, your pillar page is alone, competing against sites that have built exactly this kind of depth.`,
+      },
+      {
+        type: 'list',
+        heading: 'Example cluster: AI services',
+        intro: 'Here\'s a real example using AI services as the pillar topic. Your main AI service page is the centre. These five supporting articles link back to it:',
+        items: [
+          '"What Is an AI Chatbot for Small Business?" — explains the concept for business owners who\'ve heard the buzzword but don\'t know what it actually does',
+          '"Best AI Features to Add to a Business Website" — a practical list that positions you as the person who knows which features are worth it',
+          '"AI Automation Ideas for Melbourne Service Businesses" — local + niche, targets business owners in your area searching for ideas',
+          '"How AI Can Improve Lead Generation on a Website" — outcome-focused, attracts people searching for solutions to a specific problem',
+          '"Website vs Chatbot vs Automation: What Should a Small Business Buy First?" — comparison article that catches people early in their research',
+        ],
+        outro: 'Each article targets a different search query. Together, they tell Google your site is the go-to resource for AI and small business — not just a freelancer who added the word "AI" to their homepage once.',
+      },
+      {
+        type: 'steps',
+        heading: 'Building your first cluster',
+        items: [
+          {
+            title: 'Pick your most important service page',
+            description:
+              'This is the page you most want to rank for. It might be your AI services page, your web design page, or your SEO page. Whatever it is, this becomes the pillar — the centre of your cluster.',
+            difficulty: 'easy',
+            time: '~5 min',
+          },
+          {
+            title: 'List 3–5 questions your clients ask about that service',
+            description:
+              'Think about the conversations you have with potential clients. What do they ask before they hire you? "What actually is a chatbot?", "How much does it cost?", "Is it worth it for a small business?" Each question is a potential supporting article.',
+            difficulty: 'easy',
+            time: '~15 min',
+          },
+          {
+            title: 'Write each one as its own page or blog post',
+            description:
+              'Each article should be 500–1000 words of plain, useful content that answers one specific question. Don\'t stuff keywords — just answer the question the way you\'d explain it to a client over coffee. Use your city name naturally where it fits.',
+            difficulty: 'medium',
+            time: '~2 hours each',
+          },
+          {
+            title: 'Link every supporting page back to the main service page',
+            description:
+              'At the end of each article (or wherever it fits naturally), add a link back to your pillar page. Something like "If you want to see how we set this up for businesses, visit our AI services page." This tells Google that your service page is the authority on this topic.',
+            difficulty: 'easy',
+            time: '~5 min each',
+          },
+          {
+            title: 'Link the service page out to each supporting article',
+            description:
+              'Update your pillar page to mention and link to each supporting article. A section like "Learn more about AI for your business" with links to each article works well. Now Google can crawl the entire cluster from any entry point.',
+            difficulty: 'easy',
+            time: '~15 min',
+          },
+        ],
+      },
+      {
+        type: 'text',
+        heading: 'Why this works better than one big page',
+        body: `You might think "why not just put all this content on one long page?" Two reasons. First, Google prefers to rank pages that answer one specific question well — a 500-word article about "what is an AI chatbot" will outrank a 5000-word page that mentions chatbots in paragraph twelve. Second, each supporting article is a separate landing page that can rank for its own keyword. One page gives you one chance to appear in search results. Five pages give you five chances. The cluster doesn't split your authority — it multiplies it.`,
+      },
+      {
+        type: 'text',
+        heading: 'What changes after this',
+        body: `Your main service page starts ranking for competitive terms it couldn't reach alone. Each supporting article catches long-tail queries that bring in visitors who are actively researching your exact service. The cluster compounds — every new article you add strengthens the whole group. And Google starts treating your site differently. You're no longer a generic agency with a list of services. You're a site that clearly, demonstrably knows this topic. That's the shift from "we offer AI services" to "we are the AI services resource in Melbourne."`,
+      },
+      {
+        type: 'next',
+        heading: 'Next on the climb',
+        items: [
+          'Pick the service you want to be known for. Write your first supporting article this week — start with the question your clients ask most often.',
+          'After publishing three supporting articles, update your pillar service page to link to all of them.',
+          'This is the last planned step on The Climb for now. From here, it\'s execution — keep adding case studies, keep publishing useful content, keep checking Search Console. The foundation is built. Everything from here compounds.',
         ],
       },
     ],
