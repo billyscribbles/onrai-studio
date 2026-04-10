@@ -152,7 +152,15 @@ export default function TheClimbStepPage() {
                               </div>
                             </div>
                             <p className="climb-entry__step-desc">{s.description}</p>
-                            {s.example && (
+                            {s.example && s.example.sample && (
+                              <div className="climb-entry__example" aria-label="Sample example">
+                                <div className="climb-entry__example-row climb-entry__example-row--sample">
+                                  <span className="climb-entry__example-label">Sample</span>
+                                  <code className="climb-entry__example-code">{s.example.sample}</code>
+                                </div>
+                              </div>
+                            )}
+                            {s.example && s.example.before && (
                               <div className="climb-entry__example" aria-label="Before and after example">
                                 <div className="climb-entry__example-row climb-entry__example-row--before">
                                   <span className="climb-entry__example-label">Before</span>

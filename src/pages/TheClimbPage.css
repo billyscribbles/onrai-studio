@@ -1208,6 +1208,11 @@
   color: var(--color-accent-dark);
 }
 
+.climb-entry__example-row--sample .climb-entry__example-label {
+  background: var(--color-accent-light);
+  color: var(--color-accent-dark);
+}
+
 .climb-entry__example-code {
   font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
   font-size: 0.82rem;

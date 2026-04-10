@@ -421,7 +421,7 @@ export const entries = [
             time: '~15 min',
             example: {
               before: 'We build websites for real businesses.',
-              after: `We build websites for real businesses. I'm Billy — I started Onrai Studio after watching too many small businesses pay big-agency prices for slow, generic work. This studio is the version I wish they'd had.`,
+              after: `We build websites for real businesses. I started Onrai Studio after watching too many small businesses pay big-agency prices for slow, generic work. This studio is the version I wish they'd had.`,
             },
           },
           {
@@ -554,8 +554,7 @@ export const entries = [
             difficulty: 'medium',
             time: '~20 min',
             example: {
-              before: 'Onrai Studio is a leading provider of professional web design, web development, SEO services, AI solutions, digital marketing, branding, and online business solutions for clients across Australia and beyond.',
-              after: `Onrai Studio is a Melbourne-based web design and development studio for small and local businesses. We build fast, modern websites that help you get found on Google, look credible to first-time visitors, and turn that traffic into real customers. Every project is handled by a small team — no account managers, no handoffs. Founded by Billy, the studio works with clients across Melbourne and Australia.`,
+              sample: `Onrai Studio is a Melbourne-based web design and development studio for small and local businesses. We build fast, modern websites that help you get found on Google, look credible to first-time visitors, and turn that traffic into real customers. Every project is handled by a small team — no account managers, no handoffs. The studio works with clients across Melbourne and Australia.`,
             },
           },
           {
