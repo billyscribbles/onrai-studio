@@ -85,11 +85,11 @@ export default function PortfolioPage() {
   return (
     <main className="portfolio-page">
       <Helmet>
-        <title>Our Work | Onrai Studio</title>
-        <meta name="description" content="Browse Onrai Studio's portfolio of websites, eCommerce stores, and digital projects built for local and small Australian businesses." />
+        <title>Our Work — Melbourne Web Design Portfolio | Onrai Studio</title>
+        <meta name="description" content="Browse Onrai Studio's portfolio of websites, eCommerce stores, and digital projects built for Melbourne and Australian small businesses." />
         <link rel="canonical" href="https://onraistudio.com/portfolio" />
-        <meta property="og:title" content="Our Work | Onrai Studio" />
-        <meta property="og:description" content="See the websites and digital projects we've built for Australian small businesses." />
+        <meta property="og:title" content="Our Work — Melbourne Web Design Portfolio | Onrai Studio" />
+        <meta property="og:description" content="See the websites and digital projects we've built for Melbourne and Australian small businesses." />
         <meta property="og:url" content="https://onraistudio.com/portfolio" />
       </Helmet>
 

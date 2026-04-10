@@ -190,39 +190,63 @@ export const entries = [
         items: [
           {
             title: 'Home — put the city in the hero',
-            description: `The homepage is the one page Google looks at hardest. Our headline today says "Your Business, Found Online" — nice, but it could belong to any agency on Earth. We're adding "Melbourne" in three visible places: the eyebrow row ("Melbourne · Australia"), the lead sentence under the headline, and the <title> tag (which becomes "Melbourne Web Design — Onrai Studio"). On your site, do the same thing with your own city. You're not rewriting the page — you're adding one city name in three spots.`,
+            description: `The homepage is the one page Google looks at hardest. Our headline today says "Your Business, Found Online" — nice, but it could belong to any agency on Earth. We added "Melbourne" in three visible places: the eyebrow row above the headline, the lead sentence under it, and the <title> tag in the browser bar. We didn't rewrite the page — we just dropped one city name into three spots. Here's the actual edit we shipped:`,
             difficulty: 'easy',
             time: '~10 min',
+            example: {
+              before: 'AI-Powered Web Studio · Australia',
+              after: 'AI-Powered Web Studio · Melbourne · Australia',
+            },
           },
           {
             title: 'Services — localise the promise',
-            description: `Our services page headline says "Everything your business needs to grow online." We're changing it to "Everything your Melbourne business needs to grow online." That's it. One word. Same promise, but now it's pointed at a specific audience, and Google treats the page completely differently when someone searches for "Melbourne" + any service. Make the same one-word edit on your own services page — drop your city in front of "business".`,
+            description: `Our services page headline used to say "Everything your business needs to grow online." We changed it to "Everything your Melbourne business needs to grow online." That's it. One word. Same promise, but now it's pointed at a specific audience, and Google treats the page completely differently when someone searches for "Melbourne" + any service. Make the same one-word edit on your own services page — drop your city in front of "business":`,
             difficulty: 'easy',
             time: '~5 min',
+            example: {
+              before: 'Everything your business needs to grow online.',
+              after: 'Everything your Melbourne business needs to grow online.',
+            },
           },
           {
             title: `AI — swap "Australian" for the city name`,
-            description: `Our AI page currently says "AI Features — Smarter Websites for Australian Businesses". That's broad. We're swapping in "Melbourne" (we'll keep "& Australian" to signal range). The same move applies to your own site: wherever you've written "Australian" or the name of your country, try the city instead. "Australian" is a country; "Melbourne" is a customer. Google can tell the difference.`,
+            description: `Our AI page used to say "AI Features — Smarter Websites for Australian Businesses". That's broad. We swapped in "Melbourne" and kept "& Australian" to signal range. Wherever your own site says "Australian" — or the name of your country — try the city instead. "Australian" is a country; "Melbourne" is a customer. Google can tell the difference. Here's our actual title-tag edit:`,
             difficulty: 'easy',
             time: '~5 min',
+            example: {
+              before: 'AI Features — Smarter Websites for Australian Businesses',
+              after: 'AI Features — Smarter Websites for Melbourne & Australian Businesses',
+            },
           },
           {
             title: 'Contact — name the city in the hero and the meta',
-            description: `We're leaving our headline ("Let's build something together") alone — it's friendly. Underneath, we're adding one line: "Based in Melbourne. Working with businesses across Australia." We're also fixing the meta description — it currently says "AU-based", which nobody types into Google. We're changing it to "Melbourne-based". On your contact page, do both: add a location line under the headline, and make sure the meta description names the city. The contact page is where local intent closes; name the city.`,
+            description: `We left our headline ("Let's build something together") alone — it's friendly. Underneath, we added one line: "Based in Melbourne. Working with businesses across Australia." We also fixed the meta description — it used to say "AU-based", which nobody types into Google. Now it says "Melbourne-based". On your own contact page, do both: add a location line under the headline, and make sure the meta description names the city. Here's the meta-description fix:`,
             difficulty: 'easy',
             time: '~5 min',
+            example: {
+              before: 'AU-based web design studio specialising in local business websites.',
+              after: 'Melbourne-based web design studio specialising in local business websites.',
+            },
           },
           {
             title: 'Portfolio — fix the meta description',
-            description: `Our portfolio page doesn't mention Melbourne at all in its meta description — it just says "Australian businesses". We're leaving the hero copy alone; the meta alone is a surprisingly cheap win. We're changing "Australian businesses" to "Melbourne and Australian businesses". Go check your portfolio page's meta description right now — if it's missing your city, that's a three-minute fix you can do before finishing this article.`,
+            description: `Our portfolio page didn't mention Melbourne at all in its meta description — it just said "Australian businesses". We left the hero copy alone; the meta alone is a surprisingly cheap win. We changed "Australian businesses" to "Melbourne and Australian businesses". Go check your own portfolio page's meta description right now — if it's missing your city, that's a three-minute fix:`,
             difficulty: 'easy',
             time: '~3 min',
+            example: {
+              before: 'Browse our portfolio of websites built for local and small Australian businesses.',
+              after: 'Browse our portfolio of websites built for Melbourne and Australian small businesses.',
+            },
           },
           {
             title: `Audit every <title> tag for the city name`,
-            description: `Finally, we're walking every page's <title> tag one by one and making sure each one includes "Melbourne" or "Onrai Studio" (ideally both). Google compares what your pages say about themselves, and if five titles mention the city and two don't, those two look like stragglers. Do the same sweep on your site: open every page, look at the browser tab, and ask "does this title tell Google who I am and where I am?" Consistency is the whole game — a tidy set of titles is a trust signal, a messy set is a leak.`,
+            description: `Finally, we walked every page's <title> tag one by one and made sure each one includes "Melbourne" and "Onrai Studio". Google compares what your pages say about themselves, and if five titles mention the city and two don't, those two look like stragglers. Do the same sweep on your site: open every page, look at the browser tab, and ask "does this title tell Google who I am and where I am?" Here's the homepage title we shipped:`,
             difficulty: 'medium',
             time: '~15 min',
+            example: {
+              before: 'Onrai Studio — Web Design & Development for Local Businesses in Australia',
+              after: 'Melbourne Web Design & Development — Onrai Studio',
+            },
           },
         ],
       },

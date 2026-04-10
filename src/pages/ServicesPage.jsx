@@ -136,12 +136,12 @@ export default function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>Services — Web Design, Branding & Digital Marketing | Onrai Studio</title>
-        <meta name="description" content="Onrai Studio offers web design, branding, graphic design, digital marketing, AI-powered search, hosting, maintenance, and custom admin dashboards for local and small businesses across Australia." />
+        <title>Melbourne Web Design, Branding & Digital Marketing Services — Onrai Studio</title>
+        <meta name="description" content="Everything your Melbourne business needs online — web design, branding, graphic design, digital marketing, AI-powered search, hosting, maintenance, and custom admin dashboards. Melbourne-based, serving all of Australia." />
         <link rel="canonical" href="https://onraistudio.com/services" />
         <meta property="og:url" content="https://onraistudio.com/services" />
-        <meta property="og:title" content="Services — Web Design, Branding & Digital Marketing | Onrai Studio" />
-        <meta property="og:description" content="Everything your business needs online — web design, branding, graphic design, and digital marketing. Melbourne-based studio, serving all of Australia." />
+        <meta property="og:title" content="Melbourne Web Design, Branding & Digital Marketing — Onrai Studio" />
+        <meta property="og:description" content="Everything your Melbourne business needs online — web design, branding, graphic design, and digital marketing. Melbourne-based studio, serving all of Australia." />
       </Helmet>
 
       <main className="services-page">
@@ -156,9 +156,9 @@ export default function ServicesPage() {
             >
               <div className="sp__hero-eyebrow">
                 <span className="sp__hero-dot" />
-                Full-service studio
+                Full-service studio · Melbourne
               </div>
-              <h1 className="sp__hero-heading">Everything your business<br />needs to grow online.</h1>
+              <h1 className="sp__hero-heading">Everything your Melbourne business<br />needs to grow online.</h1>
               <p className="sp__hero-lead">
                 Web design, branding, graphic design, and digital marketing — all under one roof,
                 all built around your business goals.

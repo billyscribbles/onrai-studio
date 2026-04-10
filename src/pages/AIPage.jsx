@@ -85,11 +85,11 @@ export default function AIPage() {
   return (
     <>
       <Helmet>
-        <title>AI Features — Smarter Websites for Australian Businesses | Onrai Studio</title>
-        <meta name="description" content="Onrai Studio builds AI-powered websites with custom chatbots, automated content, business data intelligence, and smart marketing tools for local Australian businesses." />
+        <title>AI Features — Smarter Websites for Melbourne & Australian Businesses | Onrai Studio</title>
+        <meta name="description" content="Onrai Studio builds AI-powered websites with custom chatbots, automated content, business data intelligence, and smart marketing tools for Melbourne and Australian businesses." />
         <link rel="canonical" href="https://onraistudio.com/ai" />
-        <meta property="og:title" content="AI Features | Onrai Studio" />
-        <meta property="og:description" content="Custom AI chatbots, content writing, business intelligence, and marketing automation — all built into your website." />
+        <meta property="og:title" content="AI Features for Melbourne Websites | Onrai Studio" />
+        <meta property="og:description" content="Custom AI chatbots, content writing, business intelligence, and marketing automation — built into your website by a Melbourne studio." />
         <meta property="og:url" content="https://onraistudio.com/ai" />
       </Helmet>
 
@@ -105,7 +105,7 @@ export default function AIPage() {
             >
               <div className="aip__hero-eyebrow">
                 <span className="aip__hero-dot" />
-                AI-Powered Websites
+                AI-Powered Websites · Melbourne
               </div>
               <h1 className="aip__hero-heading">Your website,<br />working smarter.</h1>
               <p className="aip__hero-lead">

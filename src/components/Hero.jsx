@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="hero__inner">
         <div className="hero__content">
           <motion.span className="hero__eyebrow" {...fadeUp(0)}>
-            AI-Powered Web Studio · Australia
+            AI-Powered Web Studio · Melbourne · Australia
           </motion.span>
 
           <motion.h1 className="hero__headline" {...fadeUp(0.1)}>
@@ -22,7 +22,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p className="hero__subheadline" {...fadeUp(0.2)}>
-            We build fast, AI-powered websites for local and small businesses — so your customers find you on Google, not your competitors.
+            We build fast, AI-powered websites for Melbourne small businesses — so your customers find you on Google, not your competitors.
           </motion.p>
 
           <motion.div className="hero__ctas" {...fadeUp(0.3)}>
@@ -37,7 +37,7 @@ export default function Hero() {
           <motion.div className="hero__trust-row" {...fadeUp(0.4)}>
             <span className="hero__trust-item">✓ Live in 2 weeks</span>
             <span className="hero__trust-item">✓ No lock-in contracts</span>
-            <span className="hero__trust-item">✓ AU based</span>
+            <span className="hero__trust-item">✓ Melbourne based</span>
           </motion.div>
         </div>
 
