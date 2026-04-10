@@ -86,6 +86,25 @@ export default function TheClimbStepPage() {
                     <p className="climb-entry__section-body">{section.body}</p>
                   )}
 
+                  {section.type === 'list' && (
+                    <>
+                      {section.intro && (
+                        <p className="climb-entry__section-body">{section.intro}</p>
+                      )}
+                      <ul className="climb-entry__list">
+                        {section.items.map((item, k) => (
+                          <li key={k} className="climb-entry__list-item">
+                            <span className="climb-entry__list-bullet" aria-hidden="true" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      {section.outro && (
+                        <p className="climb-entry__section-body">{section.outro}</p>
+                      )}
+                    </>
+                  )}
+
                   {section.type === 'tool' && (
                     <>
                       <p className="climb-entry__section-body">{section.body}</p>

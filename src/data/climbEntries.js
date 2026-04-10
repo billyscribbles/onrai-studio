@@ -25,6 +25,12 @@ export const chapters = [
     subtitle:
       'Google knows you exist and trusts your name. Now we teach it what you actually do, and where you do it — without building ten new pages.',
   },
+  {
+    id: 'trust',
+    title: 'Trust',
+    subtitle:
+      `Google and real customers both look for the same thing: proof you're a real business. This chapter is about making the truth visible — no puffery, no tricks.`,
+  },
 ]
 
 export const entries = [
@@ -369,6 +375,112 @@ export const entries = [
           `Set up a Google Business Profile if you haven't yet — it pairs perfectly with the schema and footer changes from this step.`,
           `Open every page of your site in an incognito window, look at the browser tab, and write down any title that doesn't carry the city. That's your fix list.`,
           `Only after the existing pages are doing their job should you consider building dedicated landing pages — and then only for services where the search demand actually justifies it.`,
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    step: 5,
+    slug: '05-trust-signals',
+    chapter: 'trust',
+    title: 'Looking Like a Real Business (Because You Are One)',
+    summary: `Google's quality checkers — and every customer who lands on your site — ask the same question in the first three seconds: "is this a real business, or just a page?" The fix isn't to fake anything. It's to surface the things that are already true, in the places people actually look. Here's the checklist we ran on our own site, and the edits we're making because of it.`,
+    sections: [
+      {
+        type: 'text',
+        heading: 'Why this matters',
+        body: `This one's personal. We didn't write this entry to teach you how to look legit — we wrote it because we want the fact that we are legit to show up on the page. That's the whole rule for this chapter: don't invent anything, just make the truth visible. Google's quality checkers and real customers run exactly the same mental checklist when they land on a small business website. Who runs this? Where are they? How do I contact them? Is there anyone else on the internet who corroborates that they exist? If the answers aren't visible in the first few seconds, both the human and the algorithm move on. The good news is that all the missing bits are usually already true in real life — they're just hiding off-page. This step is about pulling them out where they belong.`,
+      },
+      {
+        type: 'list',
+        heading: 'The on-site checklist (count your own hits)',
+        intro: `Before you change anything, run this list against your own site. Open your homepage in a new tab, scroll once, and ask how many of these are visible without clicking anywhere:`,
+        items: [
+          `Your real business name, spelled the same way everywhere.`,
+          `A contact form that actually works — not a broken "coming soon".`,
+          `An email on your own domain, not a gmail address.`,
+          `Your service area written out in plain English.`,
+          `A portfolio or some recent work, even if it's three items.`,
+          `Testimonials with real names and real locations.`,
+          `A privacy policy.`,
+          `Terms of service.`,
+          `A clear offer — pricing, packages, or at least "here's what you get".`,
+          `An About or founder page with a real human name on it.`,
+        ],
+        outro: `Most small business sites hit six or seven of these and are genuinely surprised when they find the gaps. Go count yours before you read on.`,
+      },
+      {
+        type: 'steps',
+        heading: 'The edits we\'re making to our own site',
+        items: [
+          {
+            title: 'Put your name on the About page',
+            description: `Our About page right now says "We build websites for real businesses." Nice line, but anonymous. The hidden business card we set up in Step 02 already tells Google who runs the studio — but the page a human actually reads doesn't say so out loud. That's a gap, because every visitor who gets to the About page is already looking for a face. We're fixing it by adding one short paragraph: a name, why the studio exists, one real story. A name is a trust signal. A face is a bigger one. On your own site, do the same: if there's a founder, put them on the page. One sentence is better than nothing.`,
+            difficulty: 'easy',
+            time: '~15 min',
+            example: {
+              before: 'We build websites for real businesses.',
+              after: `We build websites for real businesses. I'm Billy — I started Onrai Studio after watching too many small businesses pay big-agency prices for slow, generic work. This studio is the version I wish they'd had.`,
+            },
+          },
+          {
+            title: 'Link your profiles in the hidden business card',
+            description: `Remember the hidden business card from Step 02 — the invisible piece of code that tells Google your name and location? It has a slot called "sameAs" that's just a list of links to your profiles on other sites. Google uses it to confirm the same business exists in more than one place on the internet. Ours was empty. It's the cheapest corroboration signal you can give yourself. Grab the URLs of every profile that actually represents your business and paste them in. Skip anything you don't plan to keep alive — a dead LinkedIn page is a worse signal than no LinkedIn page.`,
+            difficulty: 'medium',
+            time: '~10 min',
+            example: {
+              before: '"sameAs": []',
+              after: '"sameAs": ["https://www.linkedin.com/company/onrai-studio", "https://www.instagram.com/onraistudio"]',
+            },
+          },
+          {
+            title: 'Show your ABN in the footer (if you have one)',
+            description: `In Australia, an ABN is the single clearest "I'm a registered business" badge there is. One small line under the copyright in your footer, and it's done — and because the footer appears on every page of your site, one mention down there is all you need. Don't have one? Skip this step entirely. Faking an ABN is fraud, and the whole point of this chapter is surfacing the truth, not inventing new versions of it. (The number in our example below is a placeholder — we'll swap it for the real one before it ships.)`,
+            difficulty: 'easy',
+            time: '~2 min',
+            example: {
+              before: '© 2025 Onrai Studio. Built in Australia. All rights reserved.',
+              after: '© 2025 Onrai Studio · ABN 00 000 000 000 · Built in Australia.',
+            },
+          },
+          {
+            title: 'Keep every number on your site current',
+            description: `Open your homepage and your About page and read every number out loud. Project counts. Team size. Years in business. Response times. For each one, ask yourself a simple question: is that still true this month? Numbers on a website drift — you launch with a figure, six months go by, and nobody ever goes back to update it. A visitor can feel the difference between a number that's current and a number that's stale, even if they can't articulate why. The rule is the same as the rest of this chapter: the truth is the strongest signal you have, so keep it current. If a stat is hard to keep fresh, use qualitative language instead — "a growing portfolio", "a small team", "fast turnarounds" — and you'll never have to remember to update it.`,
+            difficulty: 'easy',
+            time: '~10 min',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'The off-site half nobody mentions',
+        intro: `Here's the bit most SEO advice skips. Google doesn't just read your site — it reads the web around your site. When the same business name and details appear on LinkedIn, Instagram, a directory listing, and a Google Business Profile, all pointing back to the same domain, that's corroboration, and corroboration is trust. Four off-site things are worth having, in rough order of value:`,
+        items: [
+          `LinkedIn company page — the most credible business identity link on the internet.`,
+          `Instagram profile — especially if your work is visual.`,
+          `Google Business Profile — the single biggest lever for local trust if you serve a physical area. We've flagged this three times now, because it's that important.`,
+          `One good directory listing if one is genuinely relevant to your industry — a chamber of commerce, a trades register, an industry association. One good listing beats ten spammy ones.`,
+        ],
+        outro: `The rule is strict: only list things you actually have and actually plan to maintain. A dead profile hurts more than a missing one.`,
+      },
+      {
+        type: 'text',
+        heading: `The thing you don't do`,
+        body: `The counter-rule, same shape as last chapter. Don't fake reviews — buying them is against Google's rules and they're getting very good at spotting them. Don't invent an office address. Don't paste stock-photo headshots onto an anonymous About page. Don't claim years of experience you don't have. Don't inflate the team count. Don't buy followers. The problem isn't the lie itself — it's that the moment one customer catches it, the trust is gone permanently, and negative search results about your business outrank positive ones for years. The whole point of Step 05 is subtraction of fake polish and addition of real detail. If you're tempted to inflate a number, shrink it instead. The smaller, truer version does more work.`,
+      },
+      {
+        type: 'text',
+        heading: 'What changes after this',
+        body: `Three things start happening, quietly, over the following few weeks. Google's schema corroboration kicks in — the business starts to look real across the whole web, not just on one domain, which is one of the strongest trust signals the algorithm has. The bounce rate on your homepage drops, because the humans who land there now find the trust cues they were already scanning for and stick around. And the AI search tools that are increasingly quoting small businesses in their answers now have enough structured, linked-up detail to actually cite you. None of this needed new pages, new copy, or new features. It was all surfacing the truth you already had.`,
+      },
+      {
+        type: 'next',
+        heading: 'Next on the climb',
+        items: [
+          `Set up your Google Business Profile if you haven't yet — this is now the third time we've flagged it, because it's genuinely the biggest single lever left.`,
+          `Once a week for the next month, search your own business name from an incognito window. Write down anything that looks off. That's your punch list.`,
+          `The next chapter moves from "being found" to "being chosen" — what actually makes a visitor pick you over a competitor on the same search results page.`,
         ],
       },
     ],
