@@ -96,7 +96,7 @@ export default function Footer() {
         <div>
           <div className="footer__col-title">Contact</div>
           <div className="footer__contact-info">
-            <span className="footer__location">🇦🇺 AU Based Studio</span>
+            <span className="footer__location">🇦🇺 Melbourne, Australia</span>
             <a href="mailto:hello@onraistudio.com" className="footer__email">
               hello@onraistudio.com
             </a>

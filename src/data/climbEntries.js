@@ -326,21 +326,29 @@ export const entries = [
           },
           {
             title: 'The hidden business card (your schema)',
-            description: `Remember the business card we added back in Step 02 — that piece of code that tells Google your name, location, and contact details? Open it up and check that the city, state, and country are all named explicitly, and that the "areas you serve" list mentions the city by name as well. Most templates leave this generic. A two-minute edit here gives Google a strong, structured signal that lives outside the noise of body copy.`,
+            description: `Remember the business card we added back in Step 02 — the invisible bit that tells Google your name, location, and contact details? Open it up and check that the city, state, and country are all named, and that the "areas you serve" list mentions the city too. Ours already did, so there was nothing to fix — but most templates leave this generic, so check yours. A two-minute edit here gives Google a strong signal that lives outside the noise of body copy.`,
             difficulty: 'medium',
             time: '~15 min',
           },
           {
             title: 'A local testimonial in the first slot',
-            description: `Look at the testimonials on your homepage. Is the first one a customer from your city? If not, reorder them so the local one comes first. People scan testimonials top to bottom and stop early — and Google reads the names and locations as additional proof. Don't make up fake quotes to inflate the count, and don't relabel out-of-town clients as local. A genuine mix that leads with a local name is honest and effective.`,
+            description: `Look at the testimonials on your homepage. Is the first one a customer from your city? If not, reorder them so the local one comes first. People scan testimonials top to bottom and stop early — and the first name a reader sees sets the tone. Don't make up fake quotes to inflate the count, and don't relabel out-of-town clients as local. A genuine mix that leads with a local name is honest and effective. Here's the reorder we made:`,
             difficulty: 'easy',
             time: '~10 min',
+            example: {
+              before: 'First card: Brisbane electrician. Melbourne café in slot two.',
+              after: 'First card: Melbourne café. Brisbane and Sydney follow.',
+            },
           },
           {
             title: 'Tag your portfolio projects with where the client was based',
-            description: `Walk through your portfolio or case-studies page and add a small location tag next to each project — "Melbourne", "Sydney", "Brisbane", "Remote". Two reasons. First, readers scan for "people like me" and a local tag stops them in their tracks. Second, Google reads the page and sees a cluster of local clients, which is one of the strongest local-relevance signals you can give it. If most of your work is local, this turns your portfolio into a local-proof page for free.`,
+            description: `Walk through your portfolio or case-studies page and add a small location tag next to each project — "Melbourne", "Sydney", "Brisbane", "Remote". Two reasons. First, readers scan for "people like me" and a local tag stops them in their tracks. Second, the page quietly becomes a cluster of local proof without you having to write a word of new copy. While you're there, take one more pass at the portfolio hero line and drop the city in if it fits naturally:`,
             difficulty: 'medium',
             time: '~15 min',
+            example: {
+              before: 'From local tradies to SaaS startups — a selection of websites and digital experiences we\'ve built and shipped.',
+              after: 'From Melbourne tradies to Australian SaaS startups — a selection of websites and digital experiences we\'ve built and shipped.',
+            },
           },
         ],
       },

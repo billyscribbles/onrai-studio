@@ -62,14 +62,14 @@ export default function Hero() {
                   <div className="hero__result-body">
                     <div className="hero__result-title">Mike's Plumbing — Fast &amp; Reliable</div>
                     <div className="hero__result-url">mikesplumbing.com.au</div>
-                    <div className="hero__result-desc">Licensed plumber serving Brisbane &amp; surrounds. Same-day service available. Get a free quote online.</div>
+                    <div className="hero__result-desc">Licensed plumber serving Melbourne &amp; surrounds. Same-day service available. Get a free quote online.</div>
                     <div className="hero__result-stars" aria-label="5 stars">★★★★★ <span>4.9 (83 reviews)</span></div>
                   </div>
                 </div>
                 <div className="hero__search-result hero__search-result--fade">
                   <div className="hero__result-rank">#2</div>
                   <div className="hero__result-body">
-                    <div className="hero__result-title-muted">Brisbane Plumbing Co.</div>
+                    <div className="hero__result-title-muted">Melbourne Plumbing Co.</div>
                     <div className="hero__result-desc-muted">General plumbing services...</div>
                   </div>
                 </div>

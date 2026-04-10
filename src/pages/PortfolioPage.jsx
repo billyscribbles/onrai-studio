@@ -12,6 +12,7 @@ const projects = [
     description: 'Full storefront rebuild with headless Shopify, custom cart UX, and 40% faster load times.',
     services: ['Web Design', 'Development'],
     year: '2024',
+    location: 'Melbourne, VIC',
     color: '#0c8c81',
     bg: 'var(--color-text)',
     dark: true,
@@ -23,6 +24,7 @@ const projects = [
     description: 'End-to-end MVP for a B2B SaaS startup — from landing page to dashboard onboarding flow.',
     services: ['Web Design', 'Branding'],
     year: '2024',
+    location: 'Melbourne, VIC',
     color: '#0c8c81',
     bg: 'var(--color-accent-light)',
     dark: false,
@@ -34,6 +36,7 @@ const projects = [
     description: 'Lead-gen website for a local tradie with Google Business integration and booking form.',
     services: ['Web Design', 'SEO'],
     year: '2024',
+    location: 'Melbourne, VIC',
     color: '#16a34a',
     bg: '#f0fdf4',
     dark: false,
@@ -45,6 +48,7 @@ const projects = [
     description: 'Patient-facing booking platform for a multi-location allied health clinic.',
     services: ['Web Design', 'Development'],
     year: '2023',
+    location: 'Sydney, NSW',
     color: '#0369a1',
     bg: '#f0f9ff',
     dark: false,
@@ -56,6 +60,7 @@ const projects = [
     description: 'Showcase site for a restaurant group with integrated reservations and event enquiry flow.',
     services: ['Web Design', 'Branding'],
     year: '2023',
+    location: 'Melbourne, VIC',
     color: '#7c3aed',
     bg: '#faf5ff',
     dark: false,
@@ -67,6 +72,7 @@ const projects = [
     description: 'Corporate website with resource library, team pages, and gated content download forms.',
     services: ['Web Design', 'Development', 'SEO'],
     year: '2023',
+    location: 'Brisbane, QLD',
     color: '#0c8c81',
     bg: 'var(--color-accent)',
     dark: true,
@@ -104,7 +110,7 @@ export default function PortfolioPage() {
             <p className="portfolio-page__eyebrow">Our Work</p>
             <h1 className="portfolio-page__title">Projects we're proud of.</h1>
             <p className="portfolio-page__subtitle">
-              From local tradies to SaaS startups — a selection of websites and digital experiences we've built and shipped.
+              From Melbourne tradies to Australian SaaS startups — a selection of websites and digital experiences we've built and shipped.
             </p>
           </motion.div>
 
@@ -202,7 +208,12 @@ export default function PortfolioPage() {
                       <span key={s} className={`pf-card__service-tag${p.dark ? ' pf-card__service-tag--dark' : ''}`}>{s}</span>
                     ))}
                   </div>
-                  <span className={`pf-card__year${p.dark ? ' pf-card__year--dark' : ''}`}>{p.year}</span>
+                  <div className="pf-card__meta">
+                    {p.location && (
+                      <span className={`pf-card__location${p.dark ? ' pf-card__location--dark' : ''}`}>{p.location}</span>
+                    )}
+                    <span className={`pf-card__year${p.dark ? ' pf-card__year--dark' : ''}`}>{p.year}</span>
+                  </div>
                 </div>
               </motion.div>
             ))}

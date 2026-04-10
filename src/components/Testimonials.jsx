@@ -3,19 +3,19 @@ import './Testimonials.css'
 
 const testimonials = [
   {
-    quote: "We had no website at all — just a Facebook page. They built us a proper site in two weeks and now we're getting calls from Google every week. Worth every cent.",
-    name: 'Mick T.',
-    role: 'Owner, MT Electrical',
-    type: 'Electrician · Brisbane QLD',
-    initials: 'MT',
-    stars: 5,
-  },
-  {
     quote: "Our café was invisible online. They set up our Google Business profile and built us a site with an online menu. Foot traffic increased noticeably within the first month.",
     name: 'Jess P.',
     role: 'Co-owner, The Morning Pour Café',
     type: 'Hospitality · Melbourne VIC',
     initials: 'JP',
+    stars: 5,
+  },
+  {
+    quote: "We had no website at all — just a Facebook page. They built us a proper site in two weeks and now we're getting calls from Google every week. Worth every cent.",
+    name: 'Mick T.',
+    role: 'Owner, MT Electrical',
+    type: 'Electrician · Brisbane QLD',
+    initials: 'MT',
     stars: 5,
   },
   {
