@@ -2,8 +2,22 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram } from "lucide-react";
 
-// Replace with your Calendly link when ready: https://calendly.com/your-name
 const CALENDLY_URL = 'https://calendly.com/billyhuynh01/30min';
+
+function openCalendly() {
+  if (window.Calendly) {
+    window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+    return;
+  }
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://assets.calendly.com/assets/external/widget.css';
+  document.head.appendChild(link);
+  const script = document.createElement('script');
+  script.src = 'https://assets.calendly.com/assets/external/widget.js';
+  script.onload = () => window.Calendly?.initPopupWidget({ url: CALENDLY_URL });
+  document.head.appendChild(script);
+}
 import LegalModal from "./LegalModal";
 import "./Footer.css";
 
@@ -31,7 +45,7 @@ export default function Footer() {
         {CALENDLY_URL ? (
           <button
             className="footer__cta-btn"
-            onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
+            onClick={openCalendly}
           >
             Book a Free Call →
           </button>

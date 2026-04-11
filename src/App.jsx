@@ -1,17 +1,18 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import AboutPage from './pages/AboutPage'
-import ServicesPage from './pages/ServicesPage'
-import PortfolioPage from './pages/PortfolioPage'
-import ContactPage from './pages/ContactPage'
-import AIPage from './pages/AIPage'
-import PackagesPage from './pages/PackagesPage'
-import TheClimbPage from './pages/TheClimbPage'
-import TheClimbStepPage from './pages/TheClimbStepPage'
-import NotFoundPage from './pages/NotFoundPage'
+
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ServicesPage = lazy(() => import('./pages/ServicesPage'))
+const PortfolioPage = lazy(() => import('./pages/PortfolioPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const AIPage = lazy(() => import('./pages/AIPage'))
+const PackagesPage = lazy(() => import('./pages/PackagesPage'))
+const TheClimbPage = lazy(() => import('./pages/TheClimbPage'))
+const TheClimbStepPage = lazy(() => import('./pages/TheClimbStepPage'))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -24,18 +25,20 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/ai" element={<AIPage />} />
-        <Route path="/packages" element={<PackagesPage />} />
-        <Route path="/the-climb" element={<TheClimbPage />} />
-        <Route path="/the-climb/:slug" element={<TheClimbStepPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/ai" element={<AIPage />} />
+          <Route path="/packages" element={<PackagesPage />} />
+          <Route path="/the-climb" element={<TheClimbPage />} />
+          <Route path="/the-climb/:slug" element={<TheClimbStepPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </BrowserRouter>
   )

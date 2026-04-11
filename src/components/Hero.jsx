@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import './Hero.css'
 
-const fadeUp = (delay = 0) => ({
+const fadeUp = (delay = 0, duration = 0.55) => ({
   initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1], delay },
+  transition: { duration, ease: [0.22, 1, 0.36, 1], delay },
 })
 
 export default function Hero() {
@@ -16,16 +16,16 @@ export default function Hero() {
             AI-Powered Web Studio · Melbourne · Australia
           </motion.span>
 
-          <motion.h1 className="hero__headline" {...fadeUp(0.1)}>
+          <motion.h1 className="hero__headline" {...fadeUp(0, 0.35)}>
             Your Business,<br />
             <span className="hero__headline-accent">Found Online.</span>
           </motion.h1>
 
-          <motion.p className="hero__subheadline" {...fadeUp(0.2)}>
+          <motion.p className="hero__subheadline" {...fadeUp(0.1)}>
             We build fast, AI-powered websites for Melbourne small businesses — so your customers find you on Google, not your competitors.
           </motion.p>
 
-          <motion.div className="hero__ctas" {...fadeUp(0.3)}>
+          <motion.div className="hero__ctas" {...fadeUp(0.2)}>
             <a href="#contact" className="hero__cta-primary">
               Get a Free Quote →
             </a>
