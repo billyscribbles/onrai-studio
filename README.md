@@ -1,4 +1,4 @@
-# My Studio
+# Onrai Studio
 
 AI-powered landing page for a web agency targeting local and small businesses in Australia.
 
@@ -24,8 +24,8 @@ Built with React + Vite + Framer Motion. Deployed on Railway.
 
 ```bash
 # Clone
-git clone https://github.com/billyscribbles/my_studio.git
-cd my_studio
+git clone https://github.com/billyscribbles/onrai-studio.git
+cd onrai-studio
 
 # Install dependencies
 yarn install
@@ -80,7 +80,7 @@ yarn preview    # Preview production build locally
 ## Project Structure
 
 ```
-my_studio/
+onrai-studio/
 ├── public/
 │   ├── robots.txt          # Allow all crawlers
 │   └── sitemap.xml         # Site map (update domain when live)
@@ -124,7 +124,7 @@ my_studio/
 
 ### SEO
 - Update `index.html` with your real studio name, domain, and OG image
-- Replace `mystudio.com.au` in `public/sitemap.xml` with your actual domain
+- Verify `public/sitemap.xml` uses your actual domain (`onraistudio.com`)
 - Swap in your real JSON-LD business details (`index.html` → `<script type="application/ld+json">`)
 
 ---
