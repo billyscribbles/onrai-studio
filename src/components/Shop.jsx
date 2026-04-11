@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import './Shop.css'
 
 const packages = [
   {
     name: 'Starter',
+    slug: 'starter',
     pricingModel: 'Free setup + Monthly plan',
     tagline: 'Get online fast',
     badge: 'Free Setup',
@@ -22,6 +24,7 @@ const packages = [
   },
   {
     name: 'Growth',
+    slug: 'growth',
     pricingModel: 'One-time setup + Monthly plan',
     tagline: 'Most popular',
     badge: 'Most Popular',
@@ -39,6 +42,7 @@ const packages = [
   },
   {
     name: 'eCommerce',
+    slug: 'ecommerce',
     pricingModel: 'One-time setup + Monthly plan',
     tagline: 'Sell online',
     desc: 'A full online shop so you can take orders and payments around the clock.',
@@ -55,6 +59,7 @@ const packages = [
   },
   {
     name: 'Full Custom',
+    slug: 'full-custom',
     pricingModel: 'Custom quote',
     tagline: 'Custom everything',
     desc: 'Fully custom design, development, and ongoing support. Built entirely around your business.',
@@ -115,12 +120,12 @@ export default function Shop() {
                 ))}
               </ul>
 
-              <a
-                href="#contact"
+              <Link
+                to={`/packages#${pkg.slug}`}
                 className={`shop-card__cta${pkg.featured ? ' shop-card__cta--featured' : ''}`}
               >
                 {pkg.cta} →
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>

@@ -8,6 +8,7 @@ import ServicesPage from './pages/ServicesPage'
 import PortfolioPage from './pages/PortfolioPage'
 import ContactPage from './pages/ContactPage'
 import AIPage from './pages/AIPage'
+import PackagesPage from './pages/PackagesPage'
 import TheClimbPage from './pages/TheClimbPage'
 import TheClimbStepPage from './pages/TheClimbStepPage'
 import NotFoundPage from './pages/NotFoundPage'
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/ai" element={<AIPage />} />
+        <Route path="/packages" element={<PackagesPage />} />
         <Route path="/the-climb" element={<TheClimbPage />} />
         <Route path="/the-climb/:slug" element={<TheClimbStepPage />} />
         <Route path="*" element={<NotFoundPage />} />

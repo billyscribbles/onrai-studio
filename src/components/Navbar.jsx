@@ -26,6 +26,7 @@ export default function Navbar() {
 
         <nav className="navbar__links" aria-label="Main navigation">
           <Link to="/services" className="navbar__link">Services</Link>
+          <Link to="/packages" className="navbar__link">Packages</Link>
           <Link to="/portfolio" className="navbar__link">Portfolio</Link>
           <Link to="/ai" className="navbar__link">AI</Link>
           <Link to="/about" className="navbar__link">About</Link>
@@ -53,6 +54,9 @@ export default function Navbar() {
       >
         <Link to="/services" className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
           Services
+        </Link>
+        <Link to="/packages" className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
+          Packages
         </Link>
         <Link to="/portfolio" className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
           Portfolio
