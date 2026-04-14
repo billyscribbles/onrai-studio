@@ -24,8 +24,8 @@ Built with React + Vite + Framer Motion. Deployed on Railway.
 
 ```bash
 # Clone
-git clone https://github.com/billyscribbles/onrai-studio.git
-cd onrai-studio
+git clone https://github.com/billyscribbles/onrai_studio.git
+cd onrai_studio
 
 # Install dependencies
 yarn install
