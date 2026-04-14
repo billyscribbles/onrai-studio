@@ -1293,23 +1293,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"onrai-studio@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "onrai-studio@workspace:."
-  dependencies:
-    "@types/react": "npm:^18.3.1"
-    "@types/react-dom": "npm:^18.3.1"
-    "@vitejs/plugin-react": "npm:^4.3.1"
-    framer-motion: "npm:^11.0.0"
-    lucide-react: "npm:^0.400.0"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    react-helmet-async: "npm:^3.0.0"
-    react-router-dom: "npm:^7.14.0"
-    vite: "npm:^5.4.0"
-  languageName: unknown
-  linkType: soft
-
 "nanoid@npm:^3.3.11":
   version: 3.3.11
   resolution: "nanoid@npm:3.3.11"
@@ -1363,6 +1346,23 @@ __metadata:
   checksum: 10c0/1822eb6f9b020ef6f7a7516d7b64a8036e09666ea55ac40416c36e4b2b343122c3cff0e2f085675f53de1d2db99a2a89a60ccea1d120bcd6a5347bf6ceb4a7fd
   languageName: node
   linkType: hard
+
+"onrai-studio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "onrai-studio@workspace:."
+  dependencies:
+    "@types/react": "npm:^18.3.1"
+    "@types/react-dom": "npm:^18.3.1"
+    "@vitejs/plugin-react": "npm:^4.3.1"
+    framer-motion: "npm:^11.0.0"
+    lucide-react: "npm:^0.400.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    react-helmet-async: "npm:^3.0.0"
+    react-router-dom: "npm:^7.14.0"
+    vite: "npm:^5.4.0"
+  languageName: unknown
+  linkType: soft
 
 "p-map@npm:^7.0.2":
   version: 7.0.4
