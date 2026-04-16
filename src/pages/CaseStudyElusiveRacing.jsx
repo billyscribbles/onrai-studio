@@ -67,6 +67,33 @@ const techHighlights = [
   'Live chat, Instagram feed, and Google Maps embedded into the storefront',
 ]
 
+const adminGallery = [
+  {
+    src: '/images/portfolio/elusive-racing/admin-dashboard.png',
+    caption: 'One dashboard for the whole business — 4,700+ products, live stock and status, no WooCommerce in sight.',
+  },
+  {
+    src: '/images/portfolio/elusive-racing/admin-light.png',
+    caption: '22,000+ orders searchable and filterable — staff can find any customer, status, or payment in seconds.',
+  },
+  {
+    src: '/images/portfolio/elusive-racing/admin-dark.png',
+    caption: 'Built-in dark mode for late-night listings, restocks, and wholesale nights — one click and the whole admin flips.',
+  },
+  {
+    src: '/images/portfolio/elusive-racing/admin-add-product.png',
+    caption: 'Editing a product — brand, SKU, fitment, categories, pricing, and inventory all on one screen.',
+  },
+  {
+    src: '/images/portfolio/elusive-racing/admin-order-detail.png',
+    caption: 'Opening an order: line items, customer, billing, status, notes, and shipment tracking in one tray.',
+  },
+  {
+    src: '/images/portfolio/elusive-racing/admin-promo-banner.png',
+    caption: 'Scheduling a promo banner — staff ship storewide campaigns without touching code or calling a developer.',
+  },
+]
+
 export default function CaseStudyElusiveRacing() {
   return (
     <main className="case-elusive">
@@ -244,6 +271,43 @@ export default function CaseStudyElusiveRacing() {
         </div>
       </section>
 
+      {/* Under the Hood — Admin Dashboard (dark) */}
+      <section className="case-elusive__section case-elusive__section--dark">
+        <div className="case-elusive__section-inner">
+          <motion.div
+            className="case-elusive__section-head"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: EASE }}
+          >
+            <p className="case-elusive__section-eyebrow case-elusive__section-eyebrow--on-dark">What's Under the Hood</p>
+            <h2 className="case-elusive__section-title case-elusive__section-title--on-dark">The staff dashboard that runs the business.</h2>
+            <p className="case-elusive__copy case-elusive__copy--on-dark">
+              Elusive Racing doesn't log into WooCommerce anymore. Every product, order, customer, and
+              promo is controlled from a custom admin we built specifically for the way their team works —
+              clean, fast, and friendly enough that every staff member uses it without a manual.
+            </p>
+          </motion.div>
+
+          <div className="case-elusive__admin-gallery">
+            {adminGallery.map((g, i) => (
+              <motion.figure
+                key={g.src}
+                className="case-elusive__shot-card case-elusive__shot-card--on-dark"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: EASE, delay: i * 0.05 }}
+              >
+                <img src={g.src} alt={g.caption} loading="lazy" />
+                <figcaption>{g.caption}</figcaption>
+              </motion.figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Tech Highlights + Mobile */}
       <section className="case-elusive__section case-elusive__section--alt">
         <div className="case-elusive__section-inner case-elusive__split">
@@ -254,7 +318,7 @@ export default function CaseStudyElusiveRacing() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: EASE }}
           >
-            <p className="case-elusive__section-eyebrow">Under the Hood</p>
+            <p className="case-elusive__section-eyebrow">Built for Enthusiasts</p>
             <h2 className="case-elusive__section-title">Engineered for enthusiasts.</h2>
             <p className="case-elusive__copy">
               Every detail was built for a buyer who already knows the part number. Fast search, deep product

@@ -213,6 +213,12 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.case-elusive__section--dark {
+  background: #0b0b0e;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .case-elusive__section-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -333,6 +339,44 @@
   color: var(--color-text-soft);
   padding: 16px 20px;
   line-height: 1.5;
+}
+
+/* ── Under the Hood — Admin Dashboard ──────── */
+.case-elusive__section-head {
+  max-width: 760px;
+}
+
+.case-elusive__admin-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+/* On-dark modifiers — must come after the base rules they override */
+.case-elusive__section-eyebrow--on-dark {
+  color: var(--color-accent);
+}
+
+.case-elusive__section-title--on-dark {
+  color: #ffffff;
+}
+
+.case-elusive__copy--on-dark {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.case-elusive__shot-card--on-dark {
+  background: #141418;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.case-elusive__shot-card--on-dark img {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.case-elusive__shot-card--on-dark figcaption {
+  color: rgba(255, 255, 255, 0.68);
 }
 
 /* ── Split / Tech Highlights ──────────────── */
@@ -478,6 +522,11 @@
   .case-elusive__gallery {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+  .case-elusive__admin-gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 32px;
   }
   .case-elusive__features {
     grid-template-columns: 1fr;
