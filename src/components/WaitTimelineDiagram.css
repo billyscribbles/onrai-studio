@@ -1,0 +1,120 @@
+/* ── Wait timeline diagram ─────────────────────────────── */
+
+.wait-timeline {
+  position: relative;
+  padding: 2rem 1.5rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+}
+
+.wait-timeline__track {
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  left: 2.4rem;
+  width: 2px;
+  background: repeating-linear-gradient(
+    180deg,
+    var(--color-accent) 0,
+    var(--color-accent) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.wait-timeline__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.wait-timeline__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding-left: 0;
+}
+
+.wait-timeline__node {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-light);
+  border: 2px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.wait-timeline__node-num {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+}
+
+.wait-timeline__card {
+  flex: 1;
+  padding: 0.9rem 1.1rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.wait-timeline__when {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: 0.3rem;
+}
+
+.wait-timeline__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.wait-timeline__body {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-soft);
+}
+
+@media (max-width: 600px) {
+  .wait-timeline {
+    padding: 1.5rem 1rem;
+  }
+
+  .wait-timeline__track {
+    left: 1.9rem;
+  }
+
+  .wait-timeline__item {
+    gap: 0.85rem;
+  }
+
+  .wait-timeline__node {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .wait-timeline__card {
+    padding: 0.8rem 0.9rem;
+  }
+}

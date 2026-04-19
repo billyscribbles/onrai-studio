@@ -49,6 +49,12 @@ export const chapters = [
     subtitle:
       `This is what every earlier step has been building toward. When Google decides you've earned it, your search result stops being one blue link and turns into a small menu of your whole business — nested sitelinks, more clicks, more of the page. You don't buy this upgrade. You earn it.`,
   },
+  {
+    id: 'patience',
+    title: 'The Wait',
+    subtitle:
+      `You've done the work. Now comes the hardest part: waiting for Google to catch up. This chapter sets the expectation — with real numbers, not reassurance — so you don't panic and rip up the garden to check the roots.`,
+  },
 ]
 
 export const entries = [
@@ -1419,7 +1425,68 @@ export const entries = [
         items: [
           `Set a reminder to Google "Onrai Studio" in a month and screenshot the result. Compare it to a screenshot from today. The difference is the proof.`,
           `If sitelinks haven't appeared after a month, the most common culprit is a Search Console "Sitelinks demotions" entry quietly killing them. Worth checking.`,
-          `This is the last planned step on The Climb for now. From here it's execution — keep collecting reviews, keep publishing, keep checking Search Console. The foundation is built. Everything from here compounds.`,
+          `Next up: the hardest chapter of the whole climb — the wait. Google doesn't hand over rankings the day you finish the work. We pulled real data on how long it actually takes so you know what to expect week by week.`,
+        ],
+      },
+    ],
+  },
+  {
+    id: 14,
+    step: 14,
+    slug: '14-the-wait',
+    chapter: 'patience',
+    overallDifficulty: 'easy',
+    title: 'The Wait — Why Google Takes Its Time',
+    summary: `You've done the work. Now comes the hardest part: waiting. Google doesn't reward new sites overnight — here's what the actual data says, and what to expect week by week so you don't quit three months before the compounding kicks in.`,
+    sections: [
+      {
+        type: 'text',
+        heading: 'Why this matters',
+        body: `Most small businesses don't fail at SEO because the work was wrong. They fail because they quit too early. Google is cautious with new brands — it has to find you, crawl you, decide you're real, and then slowly build trust. Skipping this context is why owners panic at week six, assume everything's broken, and start ripping up pages that were already on the right track. The work you did in Steps 01 to 13 is a seed. This step is the honest conversation about how long seeds take to grow.`,
+      },
+      {
+        type: 'text',
+        heading: `"A few days to a few weeks" — Google's own words`,
+        body: `Google Search Central, the official documentation, says it plainly: crawling alone "can take anywhere from a few days to a few weeks." And requesting a crawl in Search Console "does not guarantee that inclusion in search results will happen instantly or even at all." That's Google talking about just the first step — a robot looking at your page. Not indexing it, not ranking it, not showing it to anyone. Just looking. Everything else you want — rankings, clicks, sitelinks — sits on top of that first wait.`,
+      },
+      {
+        type: 'diagram',
+        heading: 'A realistic timeline for a new brand',
+        body: `Every site is different, but the curve has a shape. Here's what the first few years usually look like for a small-business site doing the work in this guide — not a viral launch, not a blog chasing trends, just an honest local business trying to be found.`,
+        component: 'WaitTimelineDiagram',
+        caption: `This is the shape of a normal climb. The first three months feel like nothing is happening. The next three months, the compounding starts. Year two is where most businesses would have quit — and where the ones who didn't start pulling ahead.`,
+      },
+      {
+        type: 'list',
+        heading: 'What the data actually says',
+        intro: `We pulled these numbers so you don't have to trust vibes. The big one is Ahrefs' 2-million-keyword study, "How Long Does it Take to Rank in Google?" — the most cited ranking-timeline research in the industry — plus Google's own crawling and indexing documentation.`,
+        items: [
+          `Only 1.74% of newly published pages make it into Google's top 10 results within a year. (Ahrefs, study of 2 million keywords.)`,
+          `72.9% of pages ranking in Google's top 10 are more than three years old. (Ahrefs.)`,
+          `Only 13.7% of top-10 pages are under one year old — and that's split across the whole internet, not just new small-business sites.`,
+          `The average page ranking #1 on Google is about five years old — up from two years old when Ahrefs first ran this study in 2017. Older content is dominating more, not less.`,
+          `Of the pages that do eventually reach the top 10, about 40.82% get there within the first month. Translation: if a page is going to rank fast, it ranks fast. If it hasn't by month one, expect the long climb.`,
+          `Google officially says crawling alone "can take anywhere from a few days to a few weeks" — and even requesting a crawl in Search Console "does not guarantee" anything.`,
+        ],
+        outro: `Translation for your own site: if you're three months in and you're not ranking for competitive terms yet, you're not failing — you're on schedule. The Ahrefs data says three months in is still the normal new-page zone. The pages that win at year three were almost all invisible at month three.`,
+      },
+      {
+        type: 'text',
+        heading: 'What to do during the wait (without panicking)',
+        body: `The worst thing you can do while waiting is keep ripping up the garden to check the roots. Don't redesign the site. Don't rewrite the homepage for the fourth time. Don't delete pages because they "aren't ranking yet." Every time you churn a URL, you reset the clock on the trust Google was quietly building. Instead: keep publishing, keep earning real mentions, keep your Google Business Profile active, and keep Search Console open. Progress shows up in impressions first — weeks or even months before it shows up in clicks. That's the leading indicator. Watch that number, not your rankings.`,
+      },
+      {
+        type: 'text',
+        heading: `How to tell it's actually working (early signals)`,
+        body: `You don't need to rank #1 to know the climb is working. Look for leading indicators. Your total impressions in Search Console start trending up, even if clicks are flat. Searches for your exact brand name start returning your site at position #1 instead of nothing. Your Google Business Profile views climb. New pages you publish get indexed within days instead of weeks — a sign Google has started trusting your domain. Competitors' blogs show up in your "similar sites" lists. None of these are "we made it" moments. They're the pre-rank signals that mean the compounding has started. If you're seeing any of them, stay the course.`,
+      },
+      {
+        type: 'next',
+        heading: 'Next on the climb',
+        items: [
+          `Open Search Console and screenshot your current impressions, clicks, and indexed-pages numbers. Put the screenshot in a folder. In 90 days, take another one. That folder is your proof.`,
+          `Pick one thing from Steps 01 to 13 you haven't finished yet and do it this week. Execution during the wait is what turns "maybe I'll rank" into "I definitely will."`,
+          `Next on the climb: what we'd do differently if we were starting the whole climb over tomorrow — the shortcuts, the traps, and the steps that mattered more than we expected.`,
         ],
       },
     ],

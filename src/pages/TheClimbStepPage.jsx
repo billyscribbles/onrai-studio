@@ -7,6 +7,7 @@ import SitemapDiagram from '../components/SitemapDiagram'
 import BacklinkSourcesDiagram from '../components/BacklinkSourcesDiagram'
 import CaseStudyTemplateDiagram from '../components/CaseStudyTemplateDiagram'
 import ContentClusterDiagram from '../components/ContentClusterDiagram'
+import WaitTimelineDiagram from '../components/WaitTimelineDiagram'
 import {
   chapters,
   getEntryBySlug,
@@ -146,6 +147,7 @@ export default function TheClimbStepPage() {
                         {section.component === 'BacklinkSourcesDiagram' && <BacklinkSourcesDiagram />}
                         {section.component === 'CaseStudyTemplateDiagram' && <CaseStudyTemplateDiagram />}
                         {section.component === 'ContentClusterDiagram' && <ContentClusterDiagram />}
+                        {section.component === 'WaitTimelineDiagram' && <WaitTimelineDiagram />}
                         {section.caption && (
                           <figcaption className="climb-entry__diagram-caption">
                             {section.caption}
