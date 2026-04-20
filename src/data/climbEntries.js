@@ -1330,6 +1330,14 @@ export const entries = [
         body: `Your brand result stops looking like everyone else's and starts looking like a small menu of your business. Click-through rate climbs because there are more entry points. Competitors below you get visually buried. The result feels official — and feeling official is half the battle in winning a stranger's first click. This is the payoff for every earlier step on The Climb.`,
       },
       {
+        type: 'baseline',
+        heading: 'The reward, in the wild',
+        body: `Here is what it looks like when Google decides you've earned it. Search "Onrai Studio" today and you'll see our homepage with sub-links underneath — Melbourne Web Design Portfolio, The Climb — laid out like a mini table of contents. That's Google saying: "I trust this site. Here's a menu of the pages most worth your click."`,
+        image: '/images/google-onrai-studio-sitelinks.png',
+        alt: 'Google search results for "Onrai Studio" showing the onraistudio.com listing with nested sitelinks below it: Melbourne Web Design Portfolio and The Climb.',
+        caption: `Google search for "Onrai Studio" — the reward arrives`,
+      },
+      {
         type: 'next',
         heading: 'Next on the climb',
         items: [
