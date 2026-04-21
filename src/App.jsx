@@ -33,6 +33,7 @@ const AboutPage = lazyWithRetry(() => import('./pages/AboutPage'))
 const ServicesPage = lazyWithRetry(() => import('./pages/ServicesPage'))
 const PortfolioPage = lazyWithRetry(() => import('./pages/PortfolioPage'))
 const CaseStudyElusiveRacing = lazyWithRetry(() => import('./pages/CaseStudyElusiveRacing'))
+const CaseStudySoftFlorals = lazyWithRetry(() => import('./pages/CaseStudySoftFlorals'))
 const ContactPage = lazyWithRetry(() => import('./pages/ContactPage'))
 const AIPage = lazyWithRetry(() => import('./pages/AIPage'))
 const PackagesPage = lazyWithRetry(() => import('./pages/PackagesPage'))
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/portfolio/elusive-racing" element={<CaseStudyElusiveRacing />} />
+          <Route path="/portfolio/soft-florals" element={<CaseStudySoftFlorals />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/ai" element={<AIPage />} />
           <Route path="/packages" element={<PackagesPage />} />

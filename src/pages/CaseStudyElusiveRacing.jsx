@@ -98,10 +98,10 @@ export default function CaseStudyElusiveRacing() {
   return (
     <main className="case-elusive">
       <Helmet>
-        <title>Elusive Racing — Case Study | Onrai Studio</title>
+        <title>Elusive Racing — Project | Onrai Studio</title>
         <meta name="description" content="How Onrai Studio built an end-to-end eCommerce, wholesale portal, and workshop booking experience for Elusive Racing — Melbourne's Honda performance specialists." />
         <link rel="canonical" href="https://onraistudio.com/portfolio/elusive-racing" />
-        <meta property="og:title" content="Elusive Racing — Case Study | Onrai Studio" />
+        <meta property="og:title" content="Elusive Racing — Project | Onrai Studio" />
         <meta property="og:description" content="End-to-end eCommerce, wholesale portal, and workshop booking for Melbourne's Honda performance specialists." />
         <meta property="og:url" content="https://onraistudio.com/portfolio/elusive-racing" />
         <meta property="og:image" content="https://onraistudio.com/images/portfolio/elusive-racing/home-hero.png" />
@@ -118,7 +118,7 @@ export default function CaseStudyElusiveRacing() {
             <div className="case-elusive__crumbs">
               <Link to="/portfolio">Our Work</Link>
               <span>·</span>
-              <span className="case-elusive__crumb-current">Case Study</span>
+              <span className="case-elusive__crumb-current">Project</span>
               <span>·</span>
               <span className="case-elusive__crumb-current">Melbourne, VIC</span>
             </div>

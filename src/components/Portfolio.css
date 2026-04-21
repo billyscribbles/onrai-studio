@@ -77,7 +77,8 @@
   flex-shrink: 0;
 }
 
-.portfolio-card__media video {
+.portfolio-card__media video,
+.portfolio-card__media img {
   display: block;
   width: 100%;
   height: 100%;
@@ -86,7 +87,8 @@
   transition: transform var(--transition-slow);
 }
 
-.portfolio-card--featured:hover .portfolio-card__media video {
+.portfolio-card--featured:hover .portfolio-card__media video,
+.portfolio-card--featured:hover .portfolio-card__media img {
   transform: scale(1.03);
 }
 

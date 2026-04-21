@@ -110,7 +110,7 @@ export default function PortfolioPage() {
             <p className="portfolio-page__eyebrow">Our Work</p>
             <h1 className="portfolio-page__title">Projects we're proud of.</h1>
             <p className="portfolio-page__subtitle">
-              Real builds for real businesses — starting with our latest case study for Melbourne's Honda performance specialists, Elusive Racing.
+              Real builds for real businesses — starting with our latest project for Melbourne's Honda performance specialists, Elusive Racing.
             </p>
           </motion.div>
 
@@ -160,17 +160,11 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Featured Case Study */}
+      {/* Featured Projects */}
       <section className="portfolio-page__featured">
         <div className="portfolio-page__featured-inner">
-          <motion.div
-            className="portfolio-page__featured-card"
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <Link to="/portfolio/elusive-racing" className="portfolio-page__featured-media" aria-label="View Elusive Racing case study">
+          <div className="portfolio-page__featured-card">
+            <Link to="/portfolio/elusive-racing" className="portfolio-page__featured-media" aria-label="View Elusive Racing project">
               <video
                 src="/images/portfolio/elusive-racing/hero-loop.mp4"
                 poster="/images/portfolio/elusive-racing/home-hero.png"
@@ -206,7 +200,7 @@ export default function PortfolioPage() {
               </div>
               <div className="portfolio-page__featured-ctas">
                 <Link to="/portfolio/elusive-racing" className="portfolio-page__featured-btn">
-                  View Case Study →
+                  View Project →
                 </Link>
                 <a
                   href="https://elusive-racing-production-d535.up.railway.app/"
@@ -218,7 +212,53 @@ export default function PortfolioPage() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
+
+          <div className="portfolio-page__featured-card">
+            <Link to="/portfolio/soft-florals" className="portfolio-page__featured-media" aria-label="View Soft Florals project">
+              <img
+                src="/images/portfolio/soft-florals/home-hero.png"
+                alt="Soft Florals homepage — handmade forever flowers"
+                loading="lazy"
+              />
+              <span className="portfolio-page__featured-badge">Project</span>
+            </Link>
+            <div className="portfolio-page__featured-body">
+              <p className="portfolio-page__featured-eyebrow">
+                <span className="portfolio-page__featured-dot" />
+                Recent Work · Melbourne, VIC
+              </p>
+              <h2 className="portfolio-page__featured-title">Soft Florals</h2>
+              <p className="portfolio-page__featured-desc">
+                A calm, editorial storefront for Melbourne's handmade forever-flower studio —
+                collection, brand story, care guide, and custom orders in one mobile-first build.
+              </p>
+              <div className="portfolio-page__featured-stats">
+                <div><strong>Handmade</strong><span>1-of-1 SKUs</span></div>
+                <div><strong>Worldwide</strong><span>Shipping</span></div>
+                <div><strong>Custom</strong><span>Orders Flow</span></div>
+              </div>
+              <div className="portfolio-page__featured-pills">
+                <span>eCommerce</span>
+                <span>Brand Story</span>
+                <span>Care Guide</span>
+                <span>Mobile-First</span>
+              </div>
+              <div className="portfolio-page__featured-ctas">
+                <Link to="/portfolio/soft-florals" className="portfolio-page__featured-btn">
+                  View Project →
+                </Link>
+                <a
+                  href="https://www.softflorals.com/"
+                  className="portfolio-page__featured-btn portfolio-page__featured-btn--ghost"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Site ↗
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -245,15 +285,11 @@ export default function PortfolioPage() {
           </motion.div>
 
           <div className="portfolio-page__grid">
-            {filtered.map((p, i) => (
-              <motion.div
+            {filtered.map((p) => (
+              <div
                 key={p.id}
                 className="pf-card"
                 style={{ background: p.bg }}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="pf-card__top">
                   <span className="pf-card__tag" style={{ color: p.dark ? '#5eead4' : p.color, background: p.dark ? 'rgba(13,148,136,0.2)' : undefined }}>
@@ -277,7 +313,7 @@ export default function PortfolioPage() {
                     <span className={`pf-card__year${p.dark ? ' pf-card__year--dark' : ''}`}>{p.year}</span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -13,10 +13,12 @@ const projects = [
     featured: true,
   },
   {
-    tag: 'SaaS',
-    name: 'Northwind Analytics',
-    description: 'B2B analytics dashboard with real-time reporting and onboarding flow.',
-    to: '/portfolio',
+    tag: 'eCommerce · Project',
+    name: 'Soft Florals',
+    description: "Melbourne's handmade forever-flower studio — a calm, editorial storefront with collection, brand story, care guide, and custom orders.",
+    to: '/portfolio/soft-florals',
+    image: '/images/portfolio/soft-florals/home-hero.png',
+    featured: true,
   },
   {
     tag: 'Trade',
@@ -58,18 +60,26 @@ export default function Portfolio() {
               transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
               <Link to={p.to} className="portfolio-card__link" aria-label={`View ${p.name}`}>
-                {p.featured && p.video && (
+                {p.featured && (p.video || p.image) && (
                   <div className="portfolio-card__media">
-                    <video
-                      src={p.video}
-                      poster={p.poster}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      aria-label={`${p.name} preview`}
-                    />
+                    {p.video ? (
+                      <video
+                        src={p.video}
+                        poster={p.poster}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        aria-label={`${p.name} preview`}
+                      />
+                    ) : (
+                      <img
+                        src={p.image}
+                        alt={`${p.name} preview`}
+                        loading="lazy"
+                      />
+                    )}
                     <span className="portfolio-card__badge">Featured Work</span>
                   </div>
                 )}
